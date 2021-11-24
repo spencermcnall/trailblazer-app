@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>TrailBlazer Map</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+    </head>
+
+
+
+<style>
+#nav {
+    margin:0;
+    padding:0;
+    height:50px; line-height:50px;
+    background:#0d7963; 
+    font-size:15px;
+    /* color: white; */
+    font-style:oblique;
+}
+
+#nav h3{
+    padding-left: 30px;
+    padding-top: 10px;
+    color: whitesmoke;
+}
+
+#location {
+    background-color:whitesmoke;
+    text-align: center;
+
+}
+
+#location h4 {
+    margin-top: 5%;
+}
+
+#location h4, h6 {
+    font-family: "Varela Round";
+    color: #0d7963;
+
+}
+
+#addReview {
+    background-color: #0d7963;
+    color: whitesmoke;
+    margin-top: 5%;
+}
+
+#back {
+    background-color: #0d7963;
+    color: whitesmoke;
+    margin-top: 5%;
+}
+
+.flex-container {
+    display: flex;
+    top: 50px;
+    height:525px;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    flex-grow: 2;
+} 
+
+</style>
+
+</head>
+<body>
+<div id ="nav">
+    <h3 class="mx-auto my-0 text-uppercase">TrailBlazer</h3>
+</div>
+
+<div class="flex-container">
+  
+    <div id="map" class="flex-child"></div>
+    <div id="location" class="flex-child">
+        <button id="back" onclick="history.back()">Return</button>
+        <h4>Location Name</h4>
+        <h6>Address</h6>
+        <p>Address Goes Here</p>
+        <h6>Reviews</h6>
+        <div># of Reviews Here</div>
+        <div>Review Container Here</div>
+        <button id="addReview">Add Review</button>
+    </div>
+ 
+</div>
+
+</body>
+
+<script>
+    // Get coordinates from previous page
+    navigator.geolocation.getCurrentPosition(position => {
+    const { latitude, longitude } = position.coords;
+    
+    
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGF5bGV5aGFkZ2VzIiwiYSI6ImNrdzB5M2docTd2eXkzMXMxcHAxcXV1NmMifQ.RpqjqIW44lhJYhcCr8fvIg';
+    const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/hayleyhadges/ckw1009py0qw314qtoha4yzun', // style URL
+    center: [longitude, latitude],
+    zoom: 12 
+        });
+    });
+</script>
+</html>
+
