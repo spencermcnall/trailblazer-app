@@ -1,0 +1,111 @@
+<!-- https://docs.mapbox.com/mapbox-gl-js/guides/install/
+    https://stackoverflow.com/questions/54405968/how-to-get-the-current-location-of-the-user
+
+-->
+{% extends 'base.html' %}
+
+{% block head %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>TrailBlazer Map</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!--<link href="css/styles.css" rel="stylesheet" />-->
+
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+
+<style>
+body { margin: 0; 
+       padding: 0;
+    }
+#map { position: absolute; 
+       top: 50px; 
+       bottom: 0; 
+       width: 80%;
+       height: calc(100vh - 50px);;
+    }
+#nav {
+    margin:0;
+    padding:0;
+    height:50px; line-height:50px;
+    background:#0d7963; 
+    font-size:15px;
+    /* color: white; */
+    font-style:oblique;
+}
+
+#nav h3{
+    padding-left: 30px;
+    padding-top: 10px;
+    color: white;
+}
+#sidebar {
+    float: right;
+    width: 20%;
+    text-align: center;
+    background: hsl(170, 24%, 85%);
+    height: calc(100vh - 50px);
+}
+
+#sidebar h3 {
+    margin-top: 1em;
+}
+
+#review_list {
+    height: 60%;
+    text-align: left;
+}
+
+#sidebar button {
+    margin-top: 2em;
+}
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+<div id ="nav">
+    <h3 class="mx-auto my-0 text-uppercase">TrailBlazer</h3>
+</div>
+<div id="map"></div>
+<script>
+    //navigator.geolocation.getCurrentPosition(position => {
+    //const { longitude, latitude } = position.coords;
+        
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGF5bGV5aGFkZ2VzIiwiYSI6ImNrdzB5M2docTd2eXkzMXMxcHAxcXV1NmMifQ.RpqjqIW44lhJYhcCr8fvIg';
+            const map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/hayleyhadges/ckw1009py0qw314qtoha4yzun', // style URL
+                center: [-93.0900, 44.9537],
+                // Mapbox GL JS uses [longitude, latitude] format
+                zoom: 12 
+            });
+    //});
+</script>
+<div id="sidebar">
+    <h3>Reviews</h3>
+    <p>&#11088&#11088&#11088&#11088&#11088<br>5 Stars<br>420 Reviews</p>
+    <div id="review_list" class="overflow-auto">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p>Review 1</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+            <li class="list-group-item">
+                <p>Review 2</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+            <li class="list-group-item">
+                <p>Review 3</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-primary" href="#">Add Review</button>
+</div>
+
+{% endblock %}
+
