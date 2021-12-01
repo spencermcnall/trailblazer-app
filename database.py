@@ -11,17 +11,11 @@ class Database:
 			return self.model.query.get(id)
 		return self.model.query.all()
 
-	def create(self, title, text, rating):
-		review = self.model(title, text, rating)
+	def create(self, fsq_id, review_text, rating):
+		review = self.model(fsq_id, review_text, rating)
 		self.db.session.add(review)
 		self.db.session.commit()
 
-	def update(self, id, title, text, rating):
-		review = self.get(id)
-		review.title = title
-		review.text = text
-		review.rating = rating
-		self.db.session.commit()
 
 	def delete(self, id):
 		review = self.get(id)
@@ -32,13 +26,14 @@ def reviewFactory(db):
 	class Review(db.Model):
 		__tablename__ = 'reviews'
 		id = db.Column('review_id', db.Integer, primary_key=True)
-		title = db.Column(db.String(60))
-		text = db.Column(db.String)
+		fsq_id = db.Column(db.String(60))
+		review_text = db.Column(db.String)
 		rating = db.Column(db.String)
 
-		def __init__(self, title, text, rating):
-			self.title = title
-			self.text = text
+		def __init__(self, fsq_id, review_text, rating):
+			self.fsq_id = fsq_id
+			self.review_text = review_text
 			self.rating = rating
 	return Review
+
 
