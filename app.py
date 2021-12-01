@@ -7,7 +7,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 
 @app.route("/")
 def homepage():
-    return render_template("index.html")
+    return render_template("test.html")
 
 @app.route("/map", methods=['GET', 'POST'])
 def map_page():
