@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from flask.templating import render_template
 
 app = Flask(__name__)
+app.config.from_pyfile('server.cfg')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 
 @app.route("/")
 def homepage():
