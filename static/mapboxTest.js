@@ -36,7 +36,7 @@ map.on('load', () => {
         }
     });
 });
-//});
+
 
 // create the popup
 const popup = new mapboxgl.Popup({ offset: 25 }).setText(
