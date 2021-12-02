@@ -14,4 +14,4 @@ def map_page():
 
     mapbox_access_token = 'pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA'
     
-    return render_template("mapboxTest.html", mapbox_access_token=mapbox_access_token)
+    return render_template("mapPage.html", mapbox_access_token=mapbox_access_token)
