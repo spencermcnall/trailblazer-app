@@ -1,9 +1,6 @@
 <!-- https://docs.mapbox.com/mapbox-gl-js/guides/install/
     https://stackoverflow.com/questions/54405968/how-to-get-the-current-location-of-the-user
-
-    Symbol layer: https://docs.mapbox.com/mapbox-gl-js/example/external-geojson/
-
-    National parks dataset: https://www.nps.gov/maps/tools/npmap.js/examples/geojson-layer/index.html
+    search bar: https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
 -->
 {% extends 'base.html' %}
 
@@ -24,6 +21,10 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='mapboxTest.css') }}">
+
+<!-- Load the `mapbox-gl-geocoder` plugin. -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
 
 
 {% endblock %}

@@ -1,6 +1,9 @@
+// popups: https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/
+// Symbol layer: https://docs.mapbox.com/mapbox-gl-js/example/external-geojson/
 
+// National parks dataset: https://www.nps.gov/maps/tools/npmap.js/examples/geojson-layer/index.html/
 
-
+// Search bar: https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
 
 
 
@@ -26,26 +29,61 @@ map.on('load', () => {
 
     map.addLayer({
         'id': 'national-parks-layer',
+        'interactive' : true,
         'type': 'circle',
         'source': 'parks',
         'paint': {
-            'circle-radius': 8,
+            'circle-radius': 15,
             'circle-stroke-width': 2,
-            'circle-color': 'red',
+            'circle-color': 'green',
             'circle-stroke-color': 'white'
         }
     });
 });
 
+// displays popup on click
+map.on('click', 'national-parks-layer', (e) => {
+    const coordinates = e.features[0].geometry.coordinates.slice();
+    const name = e.features[0].properties.Name;
 
-// create the popup
-const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Construction on the Washington Monument began in 1848.'
+    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+    new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML('<p>' + name + '</p>')
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'national-parks-layer', () => {
+    map.getCanvas().style.cursor = 'pointer';
+});
+     
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'national-parks-layer', () => {
+    map.getCanvas().style.cursor = '';
+});
+
+// Add the geocoder control to the map (searchbar)
+map.addControl(
+    new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+    })
 );
 
+
+
+// create the popup
+// const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+//     'Construction on the Washington Monument began in 1848.'
+// );
+
 // create DOM element for the marker
-const el = document.createElement('div');
-el.id = 'marker';
+// const el = document.createElement('div');
+// el.id = 'marker';
 
 
 function openForm() {
