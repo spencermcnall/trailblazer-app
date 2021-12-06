@@ -1,12 +1,16 @@
 from flask import Flask, request, jsonify
 from flask.templating import render_template
 from database import Database
+import db
 
 app = Flask(__name__)
 app.config.from_pyfile('server.cfg')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 
 db = Database(app)
+db.db.create_all()
+if (len(db.get()) == 0):
+    db.create("This park is very family friendly, I see lots of dog walkers and children.", "⭐⭐⭐⭐")
 
 @app.route("/")
 def homepage():
@@ -20,11 +24,15 @@ def map_page():
     if request.method == 'POST':
         location_rating = request.form.get("location_rating")
         location_review = request.form.get("location_review")
-        db.create("1234",location_review, location_rating)
+        db.create(location_review, location_rating)
     
     reviewItems = db.get()
 
     return render_template("mapPage.html", mapbox_access_token=mapbox_access_token, reviewItems = reviewItems)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
     # Original app.py
