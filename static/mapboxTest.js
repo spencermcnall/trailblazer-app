@@ -42,7 +42,30 @@ map.on('load', () => {
 });
 
 // displays popup on click
-map.on('click', 'national-parks-layer', (e) => {
+map.on('click', 'national-parks-layer', () => {
+    // const coordinates = e.features[0].geometry.coordinates.slice();
+    // const name = e.features[0].properties.Name;
+
+    // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+    //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+    //     }
+
+    // new mapboxgl.Popup()
+    //     .setLngLat(coordinates)
+    //     .setHTML('<p>' + name + '</p>')
+    //     .addTo(map);
+    
+    openSidebar();
+});
+
+const popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false})
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'national-parks-layer', (e) => {
+    map.getCanvas().style.cursor = 'pointer';
+
     const coordinates = e.features[0].geometry.coordinates.slice();
     const name = e.features[0].properties.Name;
 
@@ -50,29 +73,22 @@ map.on('click', 'national-parks-layer', (e) => {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
 
-    new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML('<p>' + name + '</p>')
-        .addTo(map);
-});
-
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'national-parks-layer', () => {
-    map.getCanvas().style.cursor = 'pointer';
+    popup.setLngLat(coordinates).setHTML('<p>' + name + '</p>').addTo(map);
 });
      
 // Change it back to a pointer when it leaves.
 map.on('mouseleave', 'national-parks-layer', () => {
     map.getCanvas().style.cursor = '';
+    popup.remove();
 });
 
 // Add the geocoder control to the map (searchbar)
-map.addControl(
-    new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxgl
-    })
-);
+// map.addControl(
+//     new MapboxGeocoder({
+//     accessToken: mapboxgl.accessToken,
+//     mapboxgl: mapboxgl
+//     })
+// );
 
 
 
@@ -91,4 +107,14 @@ function openForm() {
 }
 function closeForm() {
     document.getElementById("popupForm").style.display = "none";
+}
+
+function openSidebar() {
+    document.getElementById("sidebar").style.width="25%";
+    // document.getElementById("main").style.marginRight="25%";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.width="0";
+    // document.getElementById("main").style.marginRight="0";
 }
