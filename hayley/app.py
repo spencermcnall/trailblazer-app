@@ -5,7 +5,6 @@ import db
 
 app = Flask(__name__)
 app.config.from_pyfile('server.cfg')
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 
 db = Database(app)
 db.db.create_all()
