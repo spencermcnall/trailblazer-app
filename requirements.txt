@@ -1,0 +1,3 @@
+# pip(3) install db.py
+# pip(3) install SQLAlchemy
+# install flask-SQLAlchemy

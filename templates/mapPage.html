@@ -11,7 +11,7 @@
 
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='mapboxTest.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='mapPage.css') }}">
 
 <!-- Load the `mapbox-gl-geocoder` plugin. -->
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
@@ -87,6 +87,6 @@
     </div>
 </div>
 
-<script src="{{url_for('static', filename='mapboxTest.js')}}"></script>
+<script src="{{url_for('static', filename='mapPage.js')}}"></script>
 
 {% endblock %}

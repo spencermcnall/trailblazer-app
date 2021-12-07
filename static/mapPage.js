@@ -1,8 +1,6 @@
 // popups: https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/
 // Symbol layer: https://docs.mapbox.com/mapbox-gl-js/example/external-geojson/
-
 // National parks dataset: https://www.nps.gov/maps/tools/npmap.js/examples/geojson-layer/index.html/
-
 // Search bar: https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
 
 
@@ -41,20 +39,8 @@ map.on('load', () => {
     });
 });
 
-// displays popup on click
-map.on('click', 'national-parks-layer', () => {
-    // const coordinates = e.features[0].geometry.coordinates.slice();
-    // const name = e.features[0].properties.Name;
-
-    // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-    //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-    //     }
-
-    // new mapboxgl.Popup()
-    //     .setLngLat(coordinates)
-    //     .setHTML('<p>' + name + '</p>')
-    //     .addTo(map);
-    
+// Opens sidebar
+map.on('click', 'national-parks-layer', () => {   
     openSidebar();
 });
 
@@ -63,6 +49,7 @@ const popup = new mapboxgl.Popup({
     closeOnClick: false})
 
 // Change the cursor to a pointer when the mouse is over the places layer.
+// Also displays the popup on hover
 map.on('mouseenter', 'national-parks-layer', (e) => {
     map.getCanvas().style.cursor = 'pointer';
 
@@ -77,6 +64,7 @@ map.on('mouseenter', 'national-parks-layer', (e) => {
 });
      
 // Change it back to a pointer when it leaves.
+//Remove popup
 map.on('mouseleave', 'national-parks-layer', () => {
     map.getCanvas().style.cursor = '';
     popup.remove();
@@ -90,18 +78,6 @@ map.on('mouseleave', 'national-parks-layer', () => {
 //     })
 // );
 
-
-
-// create the popup
-// const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-//     'Construction on the Washington Monument began in 1848.'
-// );
-
-// create DOM element for the marker
-// const el = document.createElement('div');
-// el.id = 'marker';
-
-
 function openForm() {
     document.getElementById("popupForm").style.display = "block";
 }
@@ -111,10 +87,8 @@ function closeForm() {
 
 function openSidebar() {
     document.getElementById("sidebar").style.width="25%";
-    // document.getElementById("main").style.marginRight="25%";
 }
 
 function closeSidebar() {
     document.getElementById("sidebar").style.width="0";
-    // document.getElementById("main").style.marginRight="0";
 }
