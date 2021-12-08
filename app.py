@@ -13,7 +13,7 @@ if (len(db.get()) == 0):
 
 @app.route("/")
 def homepage():
-    return render_template("test.html")
+    return render_template("cover.html")
 
 
 # Shows location with reviews, some id should be used as input
