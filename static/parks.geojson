@@ -1,0 +1,1055 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Afton State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.8624675, 92.7835367
+                ],
+                "type": "Point"
+            },
+            "id": "001"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Banning State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.1707812, 92.8440889
+                ],
+                "type": "Point"
+            },
+            "id": "002"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bear Head Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.7963051, 92.0768231
+                ],
+                "type": "Point"
+            },
+            "id": "003"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Beaver Creek Valley State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.6427458, 91.5818101
+                ],
+                "type": "Point"
+            },
+            "id": "004"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Big Bog State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.172761, 94.512033
+                ],
+                "type": "Point"
+            },
+            "id": "005"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Big Stone Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.3824644, 96.5131148
+                ],
+                "type": "Point"
+            },
+            "id": "006"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Blue Mounds State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.7069134, 96.1869728
+                ],
+                "type": "Point"
+            },
+            "id": "007"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Buffalo River State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.8655165, 96.4678474
+                ],
+                "type": "Point"
+            },
+            "id": "008"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Camden State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.362462, 95.9250247
+                ],
+                "type": "Point"
+            },
+            "id": "009"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Carley State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.1166318, 92.1760002
+                ],
+                "type": "Point"
+            },
+            "id": "010"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Cascade River State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.7097222, 90.5222222
+                ],
+                "type": "Point"
+            },
+            "id": "011"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Charles A. Lindbergh State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.9588545, 94.3952813
+                ],
+                "type": "Point"
+            },
+            "id": "012"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Crow Wing State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.2722222, 94.3333333
+                ],
+                "type": "Point"
+            },
+            "id": "013"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Cuyuna Country State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.489550, 93.977500
+                ],
+                "type": "Point"
+            },
+            "id": "014"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Flandrau State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.2882956, 94.4735837
+                ],
+                "type": "Point"
+            },
+            "id": "015"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Forestville/Mystery Cave State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.6255204, 92.247388
+                ],
+                "type": "Point"
+            },
+            "id": "016"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Fort Ridgely State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.4524621, 94.7308199
+                ],
+                "type": "Point"
+            },
+            "id": "017"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Fort Snelling State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.8857988, 93.1779985
+                ],
+                "type": "Point"
+            },
+            "id": "018"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Franz Jevne State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.642240, 94.080410
+                ],
+                "type": "Point"
+            },
+            "id": "019"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Frontenac State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.5074677, 92.3262914
+                ],
+                "type": "Point"
+            },
+            "id": "020"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Garden Island State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    49.175335, 94.834671
+                ],
+                "type": "Point"
+            },
+            "id": "021"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "George H. Crosby Manitou State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.506018, 91.109045
+                ],
+                "type": "Point"
+            },
+            "id": "022"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Glacial Lakes State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.537461, 95.521983
+                ],
+                "type": "Point"
+            },
+            "id": "023"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Glendalough State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.3333333, 95.6666667
+                ],
+                "type": "Point"
+            },
+            "id": "024"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Gooseberry Falls State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.1468715, 91.4632289
+                ],
+                "type": "Point"
+            },
+            "id": "025"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Grand Portage State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.0101633, 89.6120317
+                ],
+                "type": "Point"
+            },
+            "id": "026"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Great River Bluffs State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.9463526, 91.3993094
+                ],
+                "type": "Point"
+            },
+            "id": "027"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Greenleaf Lake State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.01591, 94.46671
+                ],
+                "type": "Point"
+            },
+            "id": "028"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Hayes Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.623309, 95.507753
+                ],
+                "type": "Point"
+            },
+            "id": "029"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Hill-Annex Mine State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.327490, 93.277520
+                ],
+                "type": "Point"
+            },
+            "id": "030"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Interstate State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.3949622, 92.6696521
+                ],
+                "type": "Point"
+            },
+            "id": "031"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Iron Range Off-Highway Vehicle State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.48247, 92.44349
+                ],
+                "type": "Point"
+            },
+            "id": "032"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Itasca State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.1974579, 95.2019642
+                ],
+                "type": "Point"
+            },
+            "id": "033"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Jay Cooke State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.6496646, 92.330748
+                ],
+                "type": "Point"
+            },
+            "id": "034"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "John A. Latsch State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.1619082, 91.8220997
+                ],
+                "type": "Point"
+            },
+            "id": "035"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Judge C. R. Magney State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.8512799, 90.0584299
+                ],
+                "type": "Point"
+            },
+            "id": "036"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Kilen Woods State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.7266244, 95.0630473
+                ],
+                "type": "Point"
+            },
+            "id": "037"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "La Salle Lake State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.33719, 95.17061
+                ],
+                "type": "Point"
+            },
+            "id": "038"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lac qui Parle State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.0205141, 95.888921
+                ],
+                "type": "Point"
+            },
+            "id": "039"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Bemidji State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.5363413, 94.8227704
+                ],
+                "type": "Point"
+            },
+            "id": "040"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Bronson State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.7247004, 96.6033741
+                ],
+                "type": "Point"
+            },
+            "id": "041"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Carlos State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.9866293, 95.3278143
+                ],
+                "type": "Point"
+            },
+            "id": "042"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Louise State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.5335762, 92.5254538
+                ],
+                "type": "Point"
+            },
+            "id": "043"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Maria State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.3138543, 93.9572003
+                ],
+                "type": "Point"
+            },
+            "id": "044"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Shetek State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.1021838, 95.6900114
+                ],
+                "type": "Point"
+            },
+            "id": "045"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lake Vermilion State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.83471, 92.19812
+                ],
+                "type": "Point"
+            },
+            "id": "046"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Maplewood State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.5335703, 95.9492193
+                ],
+                "type": "Point"
+            },
+            "id": "047"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "McCarthy Beach State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.6727068, 93.0301834
+                ],
+                "type": "Point"
+            },
+            "id": "048"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Mille Lacs Kathio State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.1288485, 93.7405269
+                ],
+                "type": "Point"
+            },
+            "id": "049"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Minneopa State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.1621879, 94.1021803
+                ],
+                "type": "Point"
+            },
+            "id": "050"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Minnesota Valley State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.661999, 93.703337
+                ],
+                "type": "Point"
+            },
+            "id": "051"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Monson Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.3205175, 95.2750235
+                ],
+                "type": "Point"
+            },
+            "id": "052"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Moose Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.436319, 92.72521
+                ],
+                "type": "Point"
+            },
+            "id": "053"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Myre-Big Island State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.6238465, 93.2890959
+                ],
+                "type": "Point"
+            },
+            "id": "054"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Nerstrand-Big Woods State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.3452425, 93.1074337
+                ],
+                "type": "Point"
+            },
+            "id": "055"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Old Mill State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.361364, 96.5703288
+                ],
+                "type": "Point"
+            },
+            "id": "056"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Red River State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.9327778, 97.0355556
+                ],
+                "type": "Point"
+            },
+            "id": "057"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Rice Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.0874639, 93.061315
+                ],
+                "type": "Point"
+            },
+            "id": "058"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "St. Croix Islands State Recreation Area"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.08524, 92.78608
+                ],
+                "type": "Point"
+            },
+            "id": "059"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "St. Croix State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.9741154, 92.5835304
+                ],
+                "type": "Point"
+            },
+            "id": "060"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sakatah Lake State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.2210746, 93.5357792
+                ],
+                "type": "Point"
+            },
+            "id": "061"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Savanna Portage State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    46.8374455, 93.1566054
+                ],
+                "type": "Point"
+            },
+            "id": "062"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Scenic State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.7157733, 93.5629701
+                ],
+                "type": "Point"
+            },
+            "id": "063"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Schoolcraft State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.2249502, 93.7999449
+                ],
+                "type": "Point"
+            },
+            "id": "064"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sibley State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.3196867, 95.0230696
+                ],
+                "type": "Point"
+            },
+            "id": "065"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Soudan Underground Mine State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.8246403, 92.2562691
+                ],
+                "type": "Point"
+            },
+            "id": "066"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Split Rock Creek State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    43.8980264, 96.3642032
+                ],
+                "type": "Point"
+            },
+            "id": "067"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Split Rock Lighthouse State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.1921472, 91.3929484
+                ],
+                "type": "Point"
+            },
+            "id": "068"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Temperance River State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.5543466, 90.8723722
+                ],
+                "type": "Point"
+            },
+            "id": "069"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Tettegouche State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    47.358806, 91.2640506
+                ],
+                "type": "Point"
+            },
+            "id": "070"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Upper Sioux Agency State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.7380132, 95.4539039
+                ],
+                "type": "Point"
+            },
+            "id": "071"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Whitewater State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    44.058297, 92.0587726
+                ],
+                "type": "Point"
+            },
+            "id": "072"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Wild River State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.5680159, 92.8757696
+                ],
+                "type": "Point"
+            },
+            "id": "073"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "William O'Brien State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    45.2194109, 92.7660423
+                ],
+                "type": "Point"
+            },
+            "id": "074"
+
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Zippel Bay State Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    48.8638742, 94.8593862
+                ],
+                "type": "Point"
+            },
+            "id": "075"
+
+        }
+    ]
+}
