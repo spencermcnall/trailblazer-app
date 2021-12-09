@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Database Visual</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Park name</th>
+            <th scope="col">Review Text</th>
+            <th scope="col">Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for review in reviewItems %}
+        <tr>
+            <td>{{ review.id }}</td>
+            <td>{{ review.park_name }}</td>
+            <td>{{ review.review_text }}</td>
+            <td>{{ review.rating }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

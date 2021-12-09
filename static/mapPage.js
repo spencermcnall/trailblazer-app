@@ -8,6 +8,7 @@
 //navigator.geolocation.getCurrentPosition(position => {
 //const { longitude, latitude } = position.coords;
 
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA';
 const stPaul = [-93.0900, 44.9537]
 const map = new mapboxgl.Map({
@@ -40,8 +41,9 @@ map.on('load', () => {
 });
 
 // Opens sidebar
-map.on('click', 'national-parks-layer', () => {   
-    openSidebar();
+map.on('click', 'national-parks-layer', (e) => {   
+    const name = e.features[0].properties.Name;
+    openSidebar(name);
 });
 
 const popup = new mapboxgl.Popup({
@@ -81,11 +83,43 @@ map.on('mouseleave', 'national-parks-layer', () => {
 function openForm() {
     document.getElementById("popupForm").style.display = "block";
 }
+
 function closeForm() {
     document.getElementById("popupForm").style.display = "none";
 }
 
-function openSidebar() {
+function openSidebar(name) {
+    //changes name of sidebar
+    form_title = document.getElementById("location_name");
+    form_title.innerText = name;
+
+    //changes name on form
+    form_loc_name = document.getElementById("form_loc_name");
+    form_loc_name.value = name;
+    // form_title.innerText = name;
+
+    // reviewItems = db.get();
+    // for (reviewItem in reviewItems) {
+    //     li = document.createElement("li")
+    //     li.setAttribute("class", "list-group-item");
+    //     li.innerText = reviewItem
+    //     ul.appendChild(li)
+    // }
+    list = document.getElementById("review_list_ul");
+
+    $(document).ready(function(){
+        $("#review_list_ul li").each(function(){
+            var item = $(this).find("#park_name").text();
+            if(item == name){
+                $(this).removeAttr("hidden");
+            }
+            else{
+                $(this).attr('hidden','');
+            }
+
+        });
+    });
+
     document.getElementById("sidebar").style.width="25%";
 }
 

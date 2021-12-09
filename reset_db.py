@@ -1,5 +1,5 @@
 print('Resetting database...')
-import db
+from app import db
 # Reset the database
 db.db.drop_all()
 # Create the tables

@@ -31,13 +31,13 @@
 <div id="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
     <!-- <button onclick="closeSidebar()">Close</button> -->
-    <h3>Reviews</h3>
-    <p>&#11088&#11088&#11088&#11088&#11088<br>5 Stars<br>420 Reviews</p>
+    <h3 id="location_name">Reviews</h3>
+    <p>&#11088&#11088&#11088 &#11088&#11088<br>5 Stars<br>420 Reviews</p>
     <div id="review_list" class="overflow-auto">
-        <ul class="list-group">
-            {% for reviewItem in reviewItems %} 
-
-            <li class="list-group-item">
+        <ul id="review_list_ul" class="list-group">
+            {% for reviewItem in reviewItems %}
+            <li class="list-group-item" hidden>
+                <p id="park_name" hidden>{{ reviewItem.park_name }}</p>
                 <p>{{ reviewItem.rating }}</p>
                 <p>{{ reviewItem.review_text }}</p>
             </li>
@@ -47,14 +47,14 @@
     <button type="button" class="btn btn-primary btn-lg" onclick="openForm()">Add Review</button>
 </div>
 </div>
-
 </div>
 
 <!-- from https://www.w3docs.com/tools/code-editor/12095 -->
 <div class="reviewPopup">
     <div class="formPopup" id="popupForm">
         <form action="/map" class="formContainer" method = "POST">
-            <h2>Location Review</h2>
+            <input type="text" id="form_loc_name" name="form_loc_name" value="" readonly>
+            <!-- <h2 id="form_loc_name" name="form_loc_name">Location Review</h2> -->
             <label for="LocationRating">
                 <strong>Rate Location</strong>
             </label><br>
@@ -87,6 +87,7 @@
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{{url_for('static', filename='mapPage.js')}}"></script>
 
 {% endblock %}
