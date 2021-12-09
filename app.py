@@ -23,7 +23,7 @@ def map_page():
     mapbox_access_token = 'pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA'
     if request.method == 'POST':
         location_name = request.form.get("form_loc_name")
-        location_rating = request.form.get("location_rating")
+        location_rating = request.form.get("rating")
         location_review = request.form.get("location_review")
         db.create(location_name, location_review, location_rating)
     
