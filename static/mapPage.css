@@ -39,8 +39,10 @@ body { margin: 0;
     transition: 0.25s;
 }
 
-#sidebar h3 {
-    margin-top: 1em;
+#sidebar h4 {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #sidebar .closebtn {
@@ -53,12 +55,12 @@ body { margin: 0;
 }
 
 #review_list {
-    height: 60%;
+    height: 55%;
     text-align: left;
 }
 
 #sidebar button {
-    margin-top: 1em;
+    margin-top: 20px;
     
 }
 

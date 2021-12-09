@@ -96,28 +96,32 @@ function openSidebar(name) {
     //changes name on form
     form_loc_name = document.getElementById("form_loc_name");
     form_loc_name.value = name;
-    // form_title.innerText = name;
-
-    // reviewItems = db.get();
-    // for (reviewItem in reviewItems) {
-    //     li = document.createElement("li")
-    //     li.setAttribute("class", "list-group-item");
-    //     li.innerText = reviewItem
-    //     ul.appendChild(li)
-    // }
+    
+    // updates sidebar with reviews for clicked location
     list = document.getElementById("review_list_ul");
-
     $(document).ready(function(){
+        var reviewCount = 0;
+        var starNum = 0;
         $("#review_list_ul li").each(function(){
             var item = $(this).find("#park_name").text();
+            var rating = $(this).find("#park_rating").text().length;
             if(item == name){
                 $(this).removeAttr("hidden");
+                reviewCount++;
+                starNum += rating;
             }
             else{
                 $(this).attr('hidden','');
             }
 
+            var avgStar = 0;
+            if (reviewCount != 0) {
+                var avgStar = (starNum / reviewCount).toFixed();
+            }
+            $("#review_number").html(reviewCount.toString() + " Reviews<br>" + " Average Rating: " + avgStar.toString() + " Stars");
         });
+
+       
     });
 
     document.getElementById("sidebar").style.width="25%";

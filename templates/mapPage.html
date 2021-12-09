@@ -31,14 +31,15 @@
 <div id="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
     <!-- <button onclick="closeSidebar()">Close</button> -->
-    <h3 id="location_name">Reviews</h3>
-    <p>&#11088&#11088&#11088 &#11088&#11088<br>5 Stars<br>420 Reviews</p>
+    <h4 id="location_name">Reviews</h4>
+    <!-- <p id="avg_rating">&#11088&#11088&#11088&#11088&#11088<br>5 Stars<br>420 Reviews</p> -->
+    <p id="review_number"></p>
     <div id="review_list" class="overflow-auto">
         <ul id="review_list_ul" class="list-group">
             {% for reviewItem in reviewItems %}
             <li class="list-group-item" hidden>
                 <p id="park_name" hidden>{{ reviewItem.park_name }}</p>
-                <p>{{ reviewItem.rating }}</p>
+                <p id="park_rating">{{ reviewItem.rating }}</p>
                 <p>{{ reviewItem.review_text }}</p>
             </li>
             {% endfor %}

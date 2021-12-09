@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, redirect, url_for
 from flask.templating import render_template
 from database import Database
 import db
@@ -26,6 +26,7 @@ def map_page():
         location_rating = request.form.get("rating")
         location_review = request.form.get("location_review")
         db.create(location_name, location_review, location_rating)
+        return redirect(url_for('map_page'))
     
     reviewItems = db.get()
 
