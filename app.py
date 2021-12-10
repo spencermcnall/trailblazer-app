@@ -1,11 +1,13 @@
+# Import statements
 from flask import Flask, request, redirect, url_for
 from flask.templating import render_template
 from database import Database
-import db
+from app import db
 
 app = Flask(__name__)
 app.config.from_pyfile('server.cfg')
 
+# Creates database table, adding 2 example reviews
 db = Database(app)
 db.db.create_all()
 if (len(db.get()) == 0):
@@ -17,7 +19,7 @@ def homepage():
     return render_template("cover.html")
 
 
-# Shows location with reviews, some id should be used as input
+# Shows reviews of location, allowing for new reviews to be added to the database
 @app.route("/map", methods=['GET', 'POST'])
 def map_page():
     mapbox_access_token = 'pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA'
@@ -31,10 +33,3 @@ def map_page():
     reviewItems = db.get()
 
     return render_template("mapPage.html", mapbox_access_token=mapbox_access_token, reviewItems = reviewItems)
-
-#ignore
-@app.route("/test")
-def test():
-    reviewItems = db.get()
-
-    return render_template("testDB.html", reviewItems=reviewItems)

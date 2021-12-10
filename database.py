@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
+#Initialize database
 class Database:
 	def __init__(self, app):
 		db = SQLAlchemy(app)
@@ -11,17 +12,12 @@ class Database:
 			return self.model.query.get(id)
 		return self.model.query.all()
 
-# Use this to return reviews that have a certain 
-	# def get(self, id=None):
-	# 	if id:
-	# 		return self.model.query.get(id)
-	# 	return self.model.query.all()
-
 	def create(self, park_name, review_text, rating):
 		review = self.model(park_name, review_text, rating)
 		self.db.session.add(review)
 		self.db.session.commit()
 
+#Set up database structure
 def reviewFactory(db):
 	class Review(db.Model):
 		__tablename__ = 'reviews'
