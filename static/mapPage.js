@@ -23,7 +23,7 @@ map.on('load', () => {
     map.addSource('parks', {
         type: 'geojson',
         // Use a URL for the value for the `data` property.
-        data: 'https://api.mapbox.com/datasets/v1/smcnall1/ckwmqij727ye627mnh03nfal8/features?access_token=pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA'
+        data: 'https://api.mapbox.com/datasets/v1/smcnall1/ckwzr39re5ui725pdwgddwg9n/features?access_token=pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA'
     });
 
     map.addLayer({
