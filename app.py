@@ -1,8 +1,10 @@
+# Authors: Hayley Hadges, Roman Bactol, Spencer McNall
+
 # Import statements
 from flask import Flask, request, redirect, url_for
 from flask.templating import render_template
 from database import Database
-from app import db
+import db
 
 app = Flask(__name__)
 app.config.from_pyfile('server.cfg')

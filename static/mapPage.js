@@ -1,13 +1,10 @@
+// Authors: Spencer McNall, Roman Bactol, Hayley Hadges
+
+// Mapbox: https://docs.mapbox.com/mapbox-gl-js/example/simple-map/
 // popups: https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/
 // Symbol layer: https://docs.mapbox.com/mapbox-gl-js/example/external-geojson/
 // National parks dataset: https://www.nps.gov/maps/tools/npmap.js/examples/geojson-layer/index.html/
 // Search bar: https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
-
-
-
-//navigator.geolocation.getCurrentPosition(position => {
-//const { longitude, latitude } = position.coords;
-
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic21jbmFsbDEiLCJhIjoiY2t3bW1wcHh1MmRocDJ0bm9pamdvaHA2eCJ9.Z5gTQQvyzRvEd-xhExmtiA';
 const stPaul = [-93.0900, 44.9537]

@@ -1,3 +1,5 @@
+# Authors: Hayley Hadges, Roman Bactol, Spencer McNall
+
 # Run in the terminal to reset the database
 
 print('Resetting database...')

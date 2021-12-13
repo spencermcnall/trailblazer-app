@@ -1,3 +1,5 @@
+# Authors: Hayley Hadges, Roman Bactol, Spencer McNall
+
 from flask_sqlalchemy import SQLAlchemy
 
 #Initialize database
